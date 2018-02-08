@@ -1,0 +1,23 @@
+<%= form_for :link, url: link_create_url do |t| %>
+<div class="actions form-group text-center pd-5">
+  <div><h1>Generate Link</h1>
+    <%= t.text_field :entered_link %><br />
+    <p><button class="btn btn-success mt-10">submit</button></p>
+  </div>
+</div>
+<% end %>
+<div class="actions form-group text-center">
+<label>Generated Link:</label> <%= @shortened_url %><br />
+</div>
+
+<style>
+  .mt-10{
+    margin-top:10px;
+  }
+  .ml-10{
+    margin-left: 10%;
+  }
+  .pd-5{
+    padding:5%;
+  }
+</style>
